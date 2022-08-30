@@ -4,7 +4,7 @@ class Solution(object):
         :type matrix: List[List[int]]
         :rtype: None Do not return anything, modify matrix in-place instead.
         """
-         def swap(array):
+        def swap(array):
             left = 0
             right = len(array)-1
             while left < right:
@@ -13,10 +13,14 @@ class Solution(object):
                 array[right] = temp
                 left += 1
                 right -= 1
+
+        #Tranpose of the matrix
         for i in range(len(matrix)):
             for j in range(i + 1, len(matrix)):
                 temp = matrix[i][j]
                 matrix[i][j] = matrix[j][i]
                 matrix[j][i] = temp
+
+        #Revert each matrix row after transpose
         for i in range(len(matrix)):
             swap(matrix[i])
