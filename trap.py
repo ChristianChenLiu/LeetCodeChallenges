@@ -12,7 +12,7 @@ class Solution(object):
         # left_h: current max height starting from left
         # left_sum: suppose there is a "right_h" that bounds "left_h", how many rains are trapped in between [left_h, right_h] ?
         left_h, left_sum = 0, 0
-        for h in(height:
+        for h in height:
             # "right_h" is found, add left_sum to ans, set "right_h" to the new "left_h"
             if h >= left_h:
                 ans += left_sum
@@ -28,7 +28,7 @@ class Solution(object):
         # right_h: current max height starting from right
         # right_sum: suppose there is a "left_h" that bounds "right_h", how many rains are trapped in between [left_h, right_h] ?
         right_h, right_sum = 0, 0
-        for h in(height[::-1]:
+        for h in height[::-1]:
             # "left_h" is found, add right_sum to ans, set "left_h" to the new "right_h"
             if h > right_h:
                 ans += right_sum
