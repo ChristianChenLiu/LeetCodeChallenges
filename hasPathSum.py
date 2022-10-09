@@ -20,4 +20,4 @@ class Solution(object):
     
     def hasPathSum(self, root, targetSum):
         
-        return self.recursive(root,0,taum)
+        return self.recursive(root,0,targetSum)
