@@ -25,4 +25,4 @@ class Solution(object):
             # Else, check both child of node1 and node2
             return dfs(node1.left, node2.left) and dfs(node1.right, node2.right)
 
-        return dfs(p, q)
+        return dfs(p, q) #Done
