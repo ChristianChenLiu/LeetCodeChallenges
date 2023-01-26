@@ -12,7 +12,7 @@ class Solution:
         minDist = float("inf")
         dist1 = [0] * n
         dist2 = [0] * n
-        visited1 = [False] * n
+        visited1 = [False] * n                  
         visited2 = [False] * n
         self.dfs(node1, edges, dist1, visited1)
         self.dfs(node2, edges, dist2, visited2)
